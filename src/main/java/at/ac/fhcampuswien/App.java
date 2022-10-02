@@ -27,7 +27,25 @@ public class App {
 
     //todo Task 3
     public void sumOfLiterals(){
-        // input your solution here
+        char a = 'Z';
+        int b = 0xface;
+        int c = 012;
+        long d = 80L;
+        double e = 44e-1f;
+        float f = 5.5f;
+        double g = 8.88e1;
+        double h = 99.9;
+        int sum;
+
+        int v = (int) d;
+        int w = (int) e;
+        int x = (int) f;
+        int y = (int) g;
+        int z = (int) h;
+
+        sum = a+b+c+v+w+x+y+z;
+        System.out.println("" +sum);
+
     }
 
     //todo Task 4
@@ -35,11 +53,8 @@ public class App {
         int num1, num2, sum;
         Scanner sc  = new Scanner(System.in);
 
-        System.out.println(" ");
+        System.out.print("");
         num1 = sc.nextInt();
-
-
-        System.out.println(" ");
         num2 = sc.nextInt();
 
         sum = num1 + num2;
@@ -48,27 +63,101 @@ public class App {
 
     //todo Task 5
     public void swapTwoNumbers(){
-        // input your solution here
+        int x, y, t;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Before Swap: ");
+        System.out.print("x: ");
+        x = sc.nextInt();
+        System.out.print("y: ");
+        y = sc.nextInt();
+
+        /*swapping */
+        t = x;
+        x = y;
+        y = t;
+        System.out.println("After Swap:");
+        System.out.println("x: "+ x);
+        System.out.println("y: " + y);
     }
 
     //todo Task 6
     public void compareTwoNumbers(){
-        // input your solution here
+        int n1, n2, x;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("n1: ");
+        n1 = sc.nextInt();
+        System.out.print("n2: ");
+        n2 = sc.nextInt();
+
+        if (n1>n2){
+            System.out.println("n1 > n2");
+        }else if (n2>n1){
+                System.out.println("n2 > n1");
+        }else{
+            System.out.println("n2 == n1");
+        }
     }
 
     //todo Task 7
     public void ratingSalesPerson(){
-        // input your solution here
+        int rev;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter annual revenue: ");
+        rev = sc.nextInt();
+
+        if (rev < 0 || rev >= 100000){
+            System.out.println("Invalid Revenue");
+        }else if (0 <= rev || rev < 20000){
+            System.out.println("Poor Sales Revenue");
+        }else if (20000 <= rev || rev < 50000){
+                System.out.println("Average Sales Revenue");
+        }else if (50000 <= rev || rev < 80000){
+            System.out.println("Good Sales Revenue");
+        }else if (80000 <= rev || rev < 100000){
+            System.out.println("Excellent Sales Revenue");
+        }
     }
 
     //todo Task 8
     public void getCommissionRate(){
-        // input your solution here
+        int x;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter CommissionClass: ");
+        x = sc.nextInt();
+
+        switch (x) {
+            case 1:
+                System.out.println("Your Commission Rate was set to 0.01");
+                break;
+            case 2:
+                System.out.println("Your Commission Rate was set to 0.02");
+                break;
+            case 3:
+                System.out.println("Your Commission Rate was set to 0.03");
+                break;
+            case 4:
+                System.out.println("Your Commission Rate was set to 0.04");
+                break;
+            default:
+                System.out.println("Your Commission Rate was set to 0.00");
+        }
     }
 
     //todo Task 9
     public void leapyear(){
-        // input your solution here
+        int y;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Year: ");
+        y = sc.nextInt();
+
+        if (y % 4 == 0){
+            System.out.println("Leapyear");
+        }else if (y % 100 == 0 ){
+            System.out.println("Not a Leapyear");
+        }else if (y % 400 == 0){
+            System.out.println("Leapyear");
+        }
     }
 
     //todo Task 10
