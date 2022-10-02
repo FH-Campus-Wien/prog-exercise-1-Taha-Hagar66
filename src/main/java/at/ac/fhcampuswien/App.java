@@ -32,7 +32,18 @@ public class App {
 
     //todo Task 4
     public void addTwoNumbers(){
-        // input your solution here
+        int num1, num2, sum;
+        Scanner sc  = new Scanner(System.in);
+
+        System.out.println(" ");
+        num1 = sc.nextInt();
+
+
+        System.out.println(" ");
+        num2 = sc.nextInt();
+
+        sum = num1 + num2;
+        System.out.println("" +sum);
     }
 
     //todo Task 5
