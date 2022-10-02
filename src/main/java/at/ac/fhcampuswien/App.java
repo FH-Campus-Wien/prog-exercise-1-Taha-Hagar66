@@ -153,7 +153,7 @@ public class App {
 
         if (y % 4 == 0){
             System.out.println("Leapyear");
-        }else if (y % 100 == 0 ){
+        }else if ((y % 100 == 0) && (y % 400 != 0)){
             System.out.println("Not a Leapyear");
         }else if (y % 400 == 0){
             System.out.println("Leapyear");
