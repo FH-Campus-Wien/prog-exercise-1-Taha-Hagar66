@@ -82,7 +82,7 @@ public class App {
 
     //todo Task 6
     public void compareTwoNumbers(){
-        int n1, n2, x;
+        int n1, n2;
         Scanner sc = new Scanner(System.in);
         System.out.print("n1: ");
         n1 = sc.nextInt();
