@@ -29,7 +29,7 @@ public class App {
     public void sumOfLiterals(){
         char a = 'Z';
         int b = 0xface;
-        int c = 012;
+        int c = 10;
         long d = 80L;
         double e = 44e-1f;
         float f = 5.5f;
@@ -90,11 +90,37 @@ public class App {
         n2 = sc.nextInt();
 
         if (n1>n2){
-            System.out.println("n1 > n2");
+            System.out.println("n1 > n2\n");
         }else if (n2>n1){
-                System.out.println("n2 > n1");
+                System.out.println("n2 > n1\n");
         }else{
-            System.out.println("n2 == n1");
+            System.out.println("n2 == n1\n");
+        }
+
+        System.out.print("n1: ");
+        n1 = sc.nextInt();
+        System.out.print("n2: ");
+        n2 = sc.nextInt();
+
+        if (n1>n2){
+            System.out.println("n1 > n2\n");
+        }else if (n2>n1){
+            System.out.println("n2 > n1\n");
+        }else{
+            System.out.println("n2 == n1\n");
+        }
+
+        System.out.print("n1: ");
+        n1 = sc.nextInt();
+        System.out.print("n2: ");
+        n2 = sc.nextInt();
+
+        if (n1>n2){
+            System.out.println("n1 > n2\n");
+        }else if (n2>n1){
+            System.out.println("n2 > n1\n");
+        }else{
+            System.out.println("n2 == n1\n");
         }
     }
 
@@ -102,67 +128,128 @@ public class App {
     public void ratingSalesPerson(){
         int rev;
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter annual revenue: ");
         rev = sc.nextInt();
 
         if (rev < 0 || rev >= 100000){
-            System.out.println("Invalid Revenue");
-        }else if (0 <= rev || rev < 20000){
-            System.out.println("Poor Sales Revenue");
-        }else if (20000 <= rev || rev < 50000){
-                System.out.println("Average Sales Revenue");
-        }else if (50000 <= rev || rev < 80000){
-            System.out.println("Good Sales Revenue");
-        }else if (80000 <= rev || rev < 100000){
-            System.out.println("Excellent Sales Revenue");
+            System.out.println("Invalid Revenue\n");
+        }else if (rev <= 0 || rev < 20000){
+            System.out.println("Poor Sales Revenue\n");
+        }else if (rev <= 20000 || rev < 50000){
+                System.out.println("Average Sales Revenue\n");
+        }else if (rev <= 50000 || rev < 80000){
+            System.out.println("Good Sales Revenue\n");
+        }else if (rev <= 80000 || rev < 100000){
+            System.out.println("Excellent Sales Revenue\n");
+        }
+
+        System.out.print("Enter annual revenue: ");
+        rev = sc.nextInt();
+
+        if (rev < 0 || rev >= 100000){
+            System.out.println("Invalid Revenue\n");
+        }else if (rev <= 0 || rev < 20000){
+            System.out.println("Poor Sales Revenue\n");
+        }else if (rev <= 20000 || rev < 50000){
+            System.out.println("Average Sales Revenue\n");
+        }else if (rev <= 50000 || rev < 80000){
+            System.out.println("Good Sales Revenue\n");
+        }else if (rev <= 80000 || rev < 100000){
+            System.out.println("Excellent Sales Revenue\n");
         }
     }
+
 
     //todo Task 8
     public void getCommissionRate(){
         int x;
 
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter CommissionClass: ");
         x = sc.nextInt();
 
         switch (x) {
             case 1:
-                System.out.println("Your Commission Rate was set to 0.01");
+                System.out.println("Your Commission Rate was set to 0.01\n");
                 break;
             case 2:
-                System.out.println("Your Commission Rate was set to 0.02");
+                System.out.println("Your Commission Rate was set to 0.02\n");
                 break;
             case 3:
-                System.out.println("Your Commission Rate was set to 0.03");
+                System.out.println("Your Commission Rate was set to 0.03\n");
                 break;
             case 4:
-                System.out.println("Your Commission Rate was set to 0.04");
+                System.out.println("Your Commission Rate was set to 0.04\n");
                 break;
             default:
-                System.out.println("Your Commission Rate was set to 0.00");
+                System.out.println("Your Commission Rate was set to 0.00\n");
+        }
+
+        System.out.print("Enter CommissionClass: ");
+        x = sc.nextInt();
+
+        switch (x) {
+            case 1:
+                System.out.println("Your Commission Rate was set to 0.01\n");
+                break;
+            case 2:
+                System.out.println("Your Commission Rate was set to 0.02\n");
+                break;
+            case 3:
+                System.out.println("Your Commission Rate was set to 0.03\n");
+                break;
+            case 4:
+                System.out.println("Your Commission Rate was set to 0.04\n");
+                break;
+            default:
+                System.out.println("Your Commission Rate was set to 0.00\n");
         }
     }
 
     //todo Task 9
     public void leapyear(){
-        int y;
+        int year;
         Scanner sc = new Scanner(System.in);
         System.out.print("Year: ");
-        y = sc.nextInt();
+        year = sc.nextInt();
 
-        if (y % 4 == 0){
+        if (((year % 4 == 0) && (year % 100!= 0)) || (year%400 == 0)){
+            System.out.println("Leapyear\n");
+        }
+        else{
+            System.out.println("Not a Leap Year\n");
+        }
+
+        System.out.print("Year: ");
+        year = sc.nextInt();
+
+        if (((year % 4 == 0) && (year % 100!= 0)) || (year%400 == 0)){
             System.out.println("Leapyear");
-        }else if ((y % 100 == 0) && (y % 400 != 0)){
-            System.out.println("Not a Leapyear");
-        }else if (y % 400 == 0){
-            System.out.println("Leapyear");
+        }
+        else{
+            System.out.println("Not a Leap Year");
         }
     }
 
     //todo Task 10
     public void transposedNumbers(){
-        // input your solution here
+        int num, rev, rest;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Number: ");
+        num = sc.nextInt();
+
+        rev = 0;
+        while (num != 0)
+        {
+            rest = num % 10;
+
+            rev = rev * 10 + rest;
+            num /= 10;
+        }
+        System.out.println ("" + rev);
     }
 
 
