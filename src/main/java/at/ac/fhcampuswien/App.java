@@ -90,38 +90,13 @@ public class App {
         n2 = sc.nextInt();
 
         if (n1>n2){
-            System.out.println("n1 > n2\n");
+            System.out.println("n1 > n2");
         }else if (n2>n1){
-                System.out.println("n2 > n1\n");
+                System.out.println("n2 > n1");
         }else{
-            System.out.println("n2 == n1\n");
+            System.out.println("n1 == n2");
         }
 
-        System.out.print("n1: ");
-        n1 = sc.nextInt();
-        System.out.print("n2: ");
-        n2 = sc.nextInt();
-
-        if (n1>n2){
-            System.out.println("n1 > n2\n");
-        }else if (n2>n1){
-            System.out.println("n2 > n1\n");
-        }else{
-            System.out.println("n2 == n1\n");
-        }
-
-        System.out.print("n1: ");
-        n1 = sc.nextInt();
-        System.out.print("n2: ");
-        n2 = sc.nextInt();
-
-        if (n1>n2){
-            System.out.println("n1 > n2\n");
-        }else if (n2>n1){
-            System.out.println("n2 > n1\n");
-        }else{
-            System.out.println("n2 == n1\n");
-        }
     }
 
     //todo Task 7
@@ -129,35 +104,21 @@ public class App {
         int rev;
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter annual revenue: ");
+        System.out.print("Enter annual Revenue: ");
         rev = sc.nextInt();
 
         if (rev < 0 || rev >= 100000){
-            System.out.println("Invalid Revenue\n");
-        }else if (rev <= 0 || rev < 20000){
-            System.out.println("Poor Sales Revenue\n");
-        }else if (rev <= 20000 || rev < 50000){
-                System.out.println("Average Sales Revenue\n");
-        }else if (rev <= 50000 || rev < 80000){
-            System.out.println("Good Sales Revenue\n");
-        }else if (rev <= 80000 || rev < 100000){
-            System.out.println("Excellent Sales Revenue\n");
+            System.out.println("Invalid Revenue");
+        }else if (rev >= 0 && rev < 20000){
+            System.out.println("Poor Sales Revenue");
+        }else if (rev >= 20000 && rev < 50000){
+                System.out.println("Average Sales Revenue");
+        }else if (rev >= 50000 && rev < 80000){
+            System.out.println("Good Sales Revenue");
+        }else if (rev >= 80000 && rev < 100000){
+            System.out.println("Excellent Sales Revenue");
         }
 
-        System.out.print("Enter annual revenue: ");
-        rev = sc.nextInt();
-
-        if (rev < 0 || rev >= 100000){
-            System.out.println("Invalid Revenue\n");
-        }else if (rev <= 0 || rev < 20000){
-            System.out.println("Poor Sales Revenue\n");
-        }else if (rev <= 20000 || rev < 50000){
-            System.out.println("Average Sales Revenue\n");
-        }else if (rev <= 50000 || rev < 80000){
-            System.out.println("Good Sales Revenue\n");
-        }else if (rev <= 80000 || rev < 100000){
-            System.out.println("Excellent Sales Revenue\n");
-        }
     }
 
 
@@ -172,40 +133,22 @@ public class App {
 
         switch (x) {
             case 1:
-                System.out.println("Your Commission Rate was set to 0.01\n");
+                System.out.println("Your Commission Rate was set to 0.01");
                 break;
             case 2:
-                System.out.println("Your Commission Rate was set to 0.02\n");
+                System.out.println("Your Commission Rate was set to 0.02");
                 break;
             case 3:
-                System.out.println("Your Commission Rate was set to 0.03\n");
+                System.out.println("Your Commission Rate was set to 0.03");
                 break;
             case 4:
-                System.out.println("Your Commission Rate was set to 0.04\n");
+                System.out.println("Your Commission Rate was set to 0.04");
                 break;
             default:
-                System.out.println("Your Commission Rate was set to 0.00\n");
+                System.out.println("Your Commission Rate was set to 0.0");
         }
 
-        System.out.print("Enter CommissionClass: ");
-        x = sc.nextInt();
 
-        switch (x) {
-            case 1:
-                System.out.println("Your Commission Rate was set to 0.01\n");
-                break;
-            case 2:
-                System.out.println("Your Commission Rate was set to 0.02\n");
-                break;
-            case 3:
-                System.out.println("Your Commission Rate was set to 0.03\n");
-                break;
-            case 4:
-                System.out.println("Your Commission Rate was set to 0.04\n");
-                break;
-            default:
-                System.out.println("Your Commission Rate was set to 0.00\n");
-        }
     }
 
     //todo Task 9
@@ -216,21 +159,12 @@ public class App {
         year = sc.nextInt();
 
         if (((year % 4 == 0) && (year % 100!= 0)) || (year%400 == 0)){
-            System.out.println("Leapyear\n");
-        }
-        else{
-            System.out.println("Not a Leap Year\n");
-        }
-
-        System.out.print("Year: ");
-        year = sc.nextInt();
-
-        if (((year % 4 == 0) && (year % 100!= 0)) || (year%400 == 0)){
             System.out.println("Leapyear");
         }
         else{
-            System.out.println("Not a Leap Year");
+            System.out.println("Not a Leapyear");
         }
+
     }
 
     //todo Task 10
